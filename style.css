@@ -5,17 +5,50 @@ body{
     margin: 0;
     background-color: black;
 }
+.header-container{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#212121;
+    padding: 10px;
+    border-bottom: 1px solid rgb(63, 63, 63);
+}
+.header-container div{
+    display:flex ;
+    flex-direction: row;
+    width: fit-content;
+    align-items: center;
+}
+.header-container span{
+    color:white;
+}
+.header-container .logo-icon{
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+    align-items: center;
+}
+.logo-icon img{
+    width: 28px;
+    height: 28px;
+}
+.logo-icon h4{
+    margin: 0 0 0 3px;
+    color: white;
+    font-weight: bolder;
+}
 .search-container{
-    width: 50vw;
+    width: 40vw;
     margin: auto;
     display:flex;
     color: white;
     border-radius: 2px;
 }
 .search-container input{
-    flex-grow: 1;
+    width: 30vw;
     border: none;
-    background-color: #121212;
+    background-color: black;
     padding: 10px 20px;
     color: white;
 }
@@ -26,22 +59,64 @@ body{
     border:none;
     background-color: #303030;
     color: white;
-    padding: 0;
+    padding:0px 10px;
     cursor: pointer;
     transition-duration: 0.5s;
 }
 .search-container button:hover{
     background-color:#8a8787;
 }
+
+
+
+.side-bar{
+    display: flex;
+    flex-direction: column;
+}
+.side-bar > .options-box{
+    display: flex;
+    flex-direction: column;
+    padding:12px 10px;
+    border-bottom: 1px solid rgb(63, 63, 63);
+}
+.options-box span{
+    padding: 5px 0;
+    color: white;
+}
+.options-box h5{ 
+    margin: 0px 0px 10px;
+    color: white;
+}
+.option-data{
+    display: flex;
+    align-items: center;
+}
+.option-data img{
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+}
+.option-data span:nth-child(2){
+    margin-left: 15px;
+    font-size: 14px;
+}
+.subscriptions-data > div{
+    margin: 5px 0px;
+}
+
+
+
+
 .videos-container{
+    width:80%;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 20px;
     padding: 30px 15px;
 }
 .video{
     height: 100%;
-    height: 280px;
+    height: 200px;
     display: flex;
     flex-flow: column;
     gap: 4px;
@@ -88,4 +163,16 @@ body{
     color: white;
     height: 50%;
     font-size: 13px;
+}
+
+
+
+
+.side-bar{
+    width:15%;
+    height: 100vh;
+    background-color: #212121;
+}
+.main-container{
+    display:flex;
 }
